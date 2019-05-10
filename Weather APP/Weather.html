@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="Weather.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,500,600,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Weather.js"></script>
+    <script src="jquery.mobile-1.4.5.js"></script>
+    <title>Weather</title>
+</head>
+
+<body>
+    <div data-role="page" id="A1" data-theme="b">
+        <div data-role="header">
+        </div>
+        <div role="main" class="ui-content">
+            <div class="infow">
+                <div id="location"></div>
+                <div id="weat"></div>
+                <div id="grad"></div>
+                <div id="hum"></div>
+                <div id="win"></div>
+                <div id="fore">
+                    <p>Mañana&nbsp;&nbsp;//&nbsp;&nbsp;Pasado</p>
+                </div>
+
+            </div>
+            <div class="jolder">
+                <div id="huella">
+                  <a href="#A2"><img src="/images/id.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div data-role="page" id="A2" data-theme="a">
+        <div data-role="header">
+            <div data-role="navbar">
+            </div>
+        </div>
+        <div role="main" class="ui-content">
+            <div id="lista">
+                <form class="ui-filterable">
+                        <input id="autocomplete-input" data-type="search" placeholder="Find a city...">
+                </form>
+                <ul id="autocomplete" data-role="listview" data-inset="true" data-filter="true"
+                    data-input="#autocomplete-input"></ul>
+
+            </div>
+
+
+            <div id="select">
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div data-role="footer" data-position="fixed"></div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
